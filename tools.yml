@@ -1,0 +1,65 @@
+# # --------------
+# # ##> CONDA
+# # --------------
+# ##> WAY 1:
+# # conda env create --name ecpa --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry lock --no-update
+# # poetry install --no-root
+# # poetry update
+# # poetry lock
+
+# ##> WAY 2:
+# # conda <create -n/activate> ecpa
+# # conda config --env --set channel_priority strict
+# # conda env update --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry lock --no-update
+# # poetry install --no-root
+# # poetry update
+# # poetry lock
+
+# # -------------------------------------
+# # ##> Reference: Conda + PyPi + Poetry
+# # -------------------------------------
+# # https://bit.ly/3N3k82T
+# # https://bit.ly/42apttz
+# # 
+
+name: ecpa
+
+channels:
+    - pytorch
+    - conda-forge
+    # - defaults
+    # - esri # for arcgis
+    # - pyviz
+
+    # We want to have a reproducible setup, so we don't want default channels,
+    # which may be different for different users. All required channels should
+    # be listed explicitly here.
+    - nodefaults
+
+dependencies:
+    - python>=3.12 #>=3.9, <3.12 
+    - pip
+    - conda-lock
+
+    # Maps
+    # - arcgis
+    - geoviews
+
+    # Similarity measures
+    - dtaidistance
+
+    # Plotting
+    - selenium
+    - firefox 
+    - geckodriver
+
+
+    - pip:
+        # - poetry
+
+
+

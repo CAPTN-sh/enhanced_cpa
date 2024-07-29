@@ -1,0 +1,135 @@
+plotting: true
+dynamic: true
+wind_enabled: false
+current_enabled: false
+prediction_method: ["kalman_filter","exponential_smoothing","stats_forecast_auto_theta","four_theta"] # "stats_forecast_auto_ces", "autoarima",
+interpolation_method: ['linear', 'quadratic', 'cubic', 'cubic_spline', 'cubic_hermite_spline', 'pchip', 'akima']
+# interpolation_first: false
+forecast_steps: 2
+past_timesteps: 39
+r_dcpa: true
+ozt: false
+axis_measure: [0, 300, 0, 300]
+security_radius: 7
+gaussian_methods: gmm # gmm, kde
+anomalies_detect: true
+
+ship1:
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 270, y: 220, COG: 325, SOG: 8.2, heading: 350, timestamp: 0.5, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 250, y: 250, COG: 280, SOG: 9.4, heading: 285, timestamp: 4.8, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 200, y: 250, COG: 235, SOG: 10, heading: 240, timestamp: 10.02, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 270, y: 220, COG: 325, SOG: 8.2, heading: 350, timestamp: 0.5, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 250, y: 250, COG: 280, SOG: 9.4, heading: 285, timestamp: 4.8, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 200, y: 250, COG: 235, SOG: 10, heading: 240, timestamp: 10.02, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+
+ship2:
+  - {x: 270, y: 220, COG: 325, SOG: 8.2, heading: 350, timestamp: 0.5, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 250, y: 250, COG: 280, SOG: 9.4, heading: 285, timestamp: 4.8, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 200, y: 250, COG: 235, SOG: 10, heading: 240, timestamp: 10.02, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 270, y: 220, COG: 325, SOG: 8.2, heading: 350, timestamp: 0.5, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 250, y: 250, COG: 280, SOG: 9.4, heading: 285, timestamp: 4.8, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 200, y: 250, COG: 235, SOG: 10, heading: 240, timestamp: 10.02, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 270, y: 220, COG: 325, SOG: 8.2, heading: 350, timestamp: 0.5, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 250, y: 250, COG: 280, SOG: 9.4, heading: 285, timestamp: 4.8, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 200, y: 250, COG: 235, SOG: 10, heading: 240, timestamp: 10.02, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 68, y: 65, COG: 10, SOG: 9.3, heading: 10, timestamp: 0.0, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 75, y: 100, COG: 20, SOG: 9.5, heading: 20, timestamp: 3.82, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+  - {x: 100, y: 150, COG: 35, SOG: 10, heading: 35, timestamp: 9.56, wind_factor: 0.3, current_factor: 0.1, bow: 3, stern: 2, portside: 1, starboard: 1}
+
+wind:
+  - {speed: 6.67, direction: 110}
+  - {speed: 6.67, direction: 110}
+
+current:
+  - {speed: 1.3, direction: 200}
+  - {speed: 1.3, direction: 200}

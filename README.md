@@ -1,51 +1,48 @@
-# Enhancing Closest Point of Approach (eCPA)
+# Steering Towards Maritime Safety with True Motion Predictions Ensemble
 
-Welcome to the official repository for the paper titled **"Steering Towards Maritime Safety with True Motion Predictions Ensemble"** presented at the ACSOS 2024 - Self-Improving Systems Integration Workshop.
 
-## Overview
-This repository contains the code implementation of our Just-In-Time (JIT) tool designed to enhance the performance of the Closest Point of Approach (CPA) calculations. Our approach leverages ensemble prediction methods to improve the accuracy and reliability of ship motion forecasting, thereby promoting maritime safety.
 
-## Publication
+## Introduction
 
-**Title:** Steering Towards Maritime Safety with True Motion Predictions Ensemble
+This repository contains the code for paper titles: "Steering Towards Maritime Safety with True Motion Predictions Ensemble"
 
-**Conference:** ACSOS 2024 - Self-Improving Systems Integration Workshop
+As illustrated in Figure, the main components of the pipeline include user adaptable methods of
+trajectories interpolation, prediction, anomalies elimination,
 
-<!--
-## Contents
+![eCPA pipline](imgs/Approach.png)
 
-- `src/`: The main source code for the JIT tool.
-- `data/`: Sample datasets for testing and evaluation.
-- `docs/`: Documentation and additional resources.
-- `examples/`: Example scripts and use cases.
+## Requirements
 
-## Installation
+To install all the requirements, one needs to first install:
 
-To install the necessary dependencies, run:
++ conda
++ poetry
 
-```bash
-pip install -r requirements.txt
-```
+A detailed list of the required libraries can be found in:
 
-## Usage
++ poetry.toml
 
-To run the tool, navigate to the `src` directory and execute the main script:
+The proper installation must then be done with poetry and conda.
 
-```bash
-python main.py
-```
+## Generated Encounter Scenarios
 
-For detailed usage instructions and options, please refer to the documentation in the `docs` directory.
--->
+![Scenarios](imgs/scenarios.png)
+
+## Contributing
+![results](imgs/scenarios_prediction.png)
+
+By considering the actual dimensions and headings
+of vessels, as well as environmental factors such as wind
+and current, the eCPA method provides a more accurate and
+reliable assessment of collision risks.
+
+## Authors and acknowledgment
+[gaf,stu222518, sga]@informatik.uni-kiel.de
 
 ## License
+We use the MIT license, see
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
++ LICENSE
 
-## Contact
 
-For any questions or inquiries, please contact the authors.
-
----
-
-Thank you for your interest in our work on improving maritime safety through advanced motion prediction techniques. We hope this tool proves to be valuable in your research and applications.
+## Citation

@@ -1,0 +1,24 @@
+# Large datafiles
+data/raw
+data/decoded
+data/maps/ostsee.geojson
+data/maps/*_save*
+data/features2
+
+# Local Files
+[lLocal]
+*[lL]ocal/
+.[lL]ocal/
+
+# History Files
+.[hH]istory
+*.[hH]istory/
+
+# Local History for Visual Studio
+.localhistory/
+poetry.lock
+
+# PyCache files
+.__pycache__/
+*.__pycache__/
+_version.py
