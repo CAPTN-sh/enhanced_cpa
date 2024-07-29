@@ -1,6 +1,16 @@
-# Steering Towards Maritime Safety with True Motion Predictions Ensemble
+# Enhancing Closest Point of Approach (eCPA)
 
+Welcome to the official repository for the paper titled **"Steering Towards Maritime Safety with True Motion Predictions Ensemble"** presented at the ACSOS 2024 - Self-Improving Systems Integration Workshop.
 
+## Overview
+
+This repository contains the code implementation of our Just-In-Time (JIT) tool designed to enhance the performance of the Closest Point of Approach (CPA) calculations. Our approach leverages ensemble prediction methods to improve the accuracy and reliability of ship motion forecasting, thereby promoting maritime safety.
+
+## Publication
+
+**Title:** Steering Towards Maritime Safety with True Motion Predictions Ensemble
+
+**Conference:** ACSOS 2024 - Self-Improving Systems Integration Workshop
 
 ## Introduction
 
@@ -36,13 +46,14 @@ of vessels, as well as environmental factors such as wind
 and current, the eCPA method provides a more accurate and
 reliable assessment of collision risks.
 
-## Authors and acknowledgment
-[gaf,stu222518, sga]@informatik.uni-kiel.de
+## Contact
+
+For any questions or inquiries, please contact the authors.
+[gaf, stu222518, sgao, st]@informatik.uni-kiel.de
 
 ## License
-We use the MIT license, see
+We use the MIT license, see the `LICENSE` file for details.
 
-+ LICENSE
 
 
 ## Citation
